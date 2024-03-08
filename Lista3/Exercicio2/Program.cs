@@ -4,7 +4,6 @@ class Program
     static void Main(string[] args)
     {
         int contador = 1;
-        double somatorioDeValoresNaSacola = 0.0;
         double valorTotalDeItens = 0.0;
 
         Console.Write("Digite a quantidade de itens da sacola: ");
@@ -23,6 +22,7 @@ class Program
         }
         else
         {
+            Console.WriteLine("Valor total da sacola eh de: R$ " + Math.Round(valorTotalDeItens, 2));
             Console.WriteLine("Que pena! A compra nao possui frete gratis.");
         }
     }

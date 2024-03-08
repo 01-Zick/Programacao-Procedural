@@ -14,7 +14,7 @@ class Program
          Console.Write(contador + "° Entrevistado:\nDigite seu salario: R$ ");
          double salarioDigitado = double.Parse(Console.ReadLine());
 
-         mediaSalario = mediaSalario + salarioDigitado / NUMERO_ENTREVISTADOS;
+         mediaSalario = mediaSalario + salarioDigitado;
 
          if (salarioDigitado > maiorSalario)
          {
@@ -26,6 +26,7 @@ class Program
          mediaFilhos = mediaFilhos + numeroDeFilhos;
       }
 
+      mediaSalario = mediaSalario / NUMERO_ENTREVISTADOS;
       mediaFilhos = mediaFilhos / NUMERO_ENTREVISTADOS;
 
       Console.WriteLine("A media de salario eh: R$" + Math.Round(mediaSalario, 2));

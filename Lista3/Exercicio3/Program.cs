@@ -22,11 +22,11 @@ class Program
             }
             else
             {
-                contador++;
-                if (contador != 3)
-                {
-                    Console.WriteLine("Usuario e/ou senha incorreto. Tente outra vez:");
-                }
+               contador++;
+               if (contador != 3)
+               {
+                   Console.WriteLine("Usuario e/ou senha incorreto. Tente outra vez:");
+               }
             }
         }
         while (contador < 3);
