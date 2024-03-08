@@ -3,7 +3,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        int contador = 1;
+        int contador = 0;
         string loginEntrada = "admin";
         string loginSenha = "123senha";
 
@@ -23,13 +23,17 @@ class Program
             else
             {
                 contador++;
+                if (contador != 3)
+                {
+                    Console.WriteLine("Usuario e/ou senha incorreto. Tente outra vez:");
+                }
             }
         }
-        while (contador <= 3);
+        while (contador < 3);
 
-        if (contador > 3)
+        if (contador >= 3)
         {
             Console.WriteLine("Sua conta foi bloqueada.");
-        }   
+        }
     }
 }
